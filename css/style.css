@@ -1,3 +1,6 @@
+
+
+
 /* Estilos generales */
 
 /* Configuración básica del cuerpo del documento */
@@ -85,6 +88,54 @@ nav a {
     background-color: #128c7e; /* Cambio de color al pasar el ratón */
 }
 
+/* Pie de página */
+footer {
+    position: fixed; /* Pie de página fijo en la parte inferior */
+    bottom: 0; /* Abajo de la ventana */
+    left: 0; /* Izquierda de la ventana */
+    right: 0; /* Derecha de la ventana */
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #cf0b0b; /* Color de texto del pie de página */
+    text-align: center; /* Alineación del texto al centro */
+    padding: 10px; /* Espaciado interior */
+    z-index: 2; /* Colocar encima del fondo y el contenido */
+}
+
+/* Estilo para el contenido (letras de color azul claro) */
+.container h2,
+.container p,
+.container .project h3,
+.container .product h3 {
+    color: #25a6f0; /* Color azul zafiro para los encabezados y texto del contenido */
+}
+
+/* Centrar secciones */
+.container > section {
+    text-align: center; /* Alineación del texto al centro */
+    margin: 20px auto; /* Margen automático para centrar */
+    width: 80%; /* Ancho del contenido */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo de secciones con opacidad */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Borde redondeado */
+    z-index: 1; /* Colocar encima del fondo */
+}
+
+/* Estilo para los enlaces internos */
+a:hover {
+    color: #007bff; /* Cambio de color al pasar el ratón */
+}
+
+/* Secciones "Contacto" y "Nosotros" */
+.section-margin {
+    margin-top: 60px; /* Margen superior para separar del navbar */
+}
+/* Estilo para enlaces deshabilitados */
+.disabled-link {
+    pointer-events: none; /* Deshabilita eventos de puntero */
+    opacity: 0.5; /* Reduce la opacidad para indicar que está deshabilitado */
+}
+
+
 
 
 
@@ -148,52 +199,3 @@ nav a {
 #instagram-button:hover {
     background-color: #7d00ea; /* Cambio de color al pasar el ratón */
 }
-
-/* Pie de página */
-footer {
-    position: fixed; /* Pie de página fijo en la parte inferior */
-    bottom: 0; /* Abajo de la ventana */
-    left: 0; /* Izquierda de la ventana */
-    right: 0; /* Derecha de la ventana */
-    background-color: #333; /* Color de fondo del pie de página */
-    color: #cf0b0b; /* Color de texto del pie de página */
-    text-align: center; /* Alineación del texto al centro */
-    padding: 10px; /* Espaciado interior */
-    z-index: 2; /* Colocar encima del fondo y el contenido */
-}
-
-/* Estilo para el contenido (letras de color azul claro) */
-.container h2,
-.container p,
-.container .project h3,
-.container .product h3 {
-    color: #25a6f0; /* Color azul zafiro para los encabezados y texto del contenido */
-}
-
-/* Centrar secciones */
-.container > section {
-    text-align: center; /* Alineación del texto al centro */
-    margin: 20px auto; /* Margen automático para centrar */
-    width: 80%; /* Ancho del contenido */
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo de secciones con opacidad */
-    padding: 20px; /* Espaciado interior */
-    border-radius: 10px; /* Borde redondeado */
-    z-index: 1; /* Colocar encima del fondo */
-}
-
-/* Estilo para los enlaces internos */
-a:hover {
-    color: #007bff; /* Cambio de color al pasar el ratón */
-}
-
-/* Secciones "Contacto" y "Nosotros" */
-.section-margin {
-    margin-top: 60px; /* Margen superior para separar del navbar */
-}
-/* Estilo para enlaces deshabilitados */
-.disabled-link {
-    pointer-events: none; /* Deshabilita eventos de puntero */
-    opacity: 0.5; /* Reduce la opacidad para indicar que está deshabilitado */
-}
-
-
