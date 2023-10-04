@@ -6,7 +6,7 @@ body {
     margin: 0; /* Margen exterior cero */
     padding: 0; /* Relleno cero */
     overflow-x: hidden; /* Evitar desplazamiento horizontal */
-    background-image: url(/images/madera\ fondo.jpeg); /* Imagen de fondo */
+    background-image: url(images/madera\ fondo.jpeg); /* Imagen de fondo */
     background-repeat: no-repeat; /* No repetir la imagen de fondo */
     background-position: center center; /* Posición de la imagen de fondo */
     background-attachment: fixed; /* Fondo con posición fija */
