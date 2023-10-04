@@ -6,7 +6,7 @@ body {
     margin: 0; /* Margen exterior cero */
     padding: 0; /* Relleno cero */
     overflow-x: hidden; /* Evitar desplazamiento horizontal */
-    background-image: url(images/madera\ fondo.jpeg); /* Imagen de fondo */
+    background-image: url(/images/madera\ fondo.jpeg); /* Imagen de fondo */
     background-repeat: no-repeat; /* No repetir la imagen de fondo */
     background-position: center center; /* Posición de la imagen de fondo */
     background-attachment: fixed; /* Fondo con posición fija */
@@ -86,6 +86,8 @@ nav a {
 }
 
 
+
+
 #facebook-button {
     background-color: #2556d3; /* Color de fondo del botón */
     color: #fff; /* Color de texto del botón */
@@ -146,6 +148,7 @@ nav a {
 #instagram-button:hover {
     background-color: #7d00ea; /* Cambio de color al pasar el ratón */
 }
+
 /* Pie de página */
 footer {
     position: fixed; /* Pie de página fijo en la parte inferior */
@@ -192,3 +195,5 @@ a:hover {
     pointer-events: none; /* Deshabilita eventos de puntero */
     opacity: 0.5; /* Reduce la opacidad para indicar que está deshabilitado */
 }
+
+
