@@ -1,6 +1,4 @@
 
-
-
 /* Estilos generales */
 
 /* Configuración básica del cuerpo del documento */
@@ -9,7 +7,7 @@ body {
     margin: 0; /* Margen exterior cero */
     padding: 0; /* Relleno cero */
     overflow-x: hidden; /* Evitar desplazamiento horizontal */
-    background-image: url(/images/madera\ fondo.jpeg); /* Imagen de fondo */
+    background-image: url("../images/mdfo.jpg"); /* Imagen de fondo */
     background-repeat: no-repeat; /* No repetir la imagen de fondo */
     background-position: center center; /* Posición de la imagen de fondo */
     background-attachment: fixed; /* Fondo con posición fija */
@@ -21,7 +19,8 @@ body {
 
 /* Fondo con posición fija */
 .background {
-    background-image: url(/images/madera\ fondo.jpeg) no-repeat center center fixed; /* Estilo de fondo */
+    
+    background-image: url("../images/mdfo.jpg") no-repeat center center fixed; /* Estilo de fondo */
     background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
     position: fixed; /* Fijar el fondo en la ventana */
     top: 0; /* Arriba de la ventana */
