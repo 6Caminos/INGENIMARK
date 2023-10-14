@@ -1,103 +1,86 @@
-
 /* Estilos generales */
 
 /* Configuración básica del cuerpo del documento */
 body {
-    font-family: Arial, sans-serif; /* Tipo de fuente y familia */
-    margin: 0; /* Margen exterior cero */
-    padding: 0; /* Relleno cero */
-    overflow-x: hidden; /* Evitar desplazamiento horizontal */
-    background-image: url("../images/mdfo.jpg"); /* Imagen de fondo */
-    background-repeat: no-repeat; /* No repetir la imagen de fondo */
-    background-position: center center; /* Posición de la imagen de fondo */
-    background-attachment: fixed; /* Fondo con posición fija */
-    background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
-    opacity: 0.7; /* Opacidad del contenido */
-    color: #ffffff; /* Color de texto global */
-    margin-top: 80px; /* Margen superior para dejar espacio para el header */
+  font-family: Arial, sans-serif; /* Tipo de fuente y familia */
+  margin: 0; /* Margen exterior cero */
+  padding: 0; /* Relleno cero */
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+  background-image: url("../images/mafondo.jpg"); /* Imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  background-position: center center; /* Posición de la imagen de fondo */
+  background-attachment: fixed; /* Fondo con posición fija */
+  background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
+  color: #ffffff; /* Color de texto global */
+  margin-top: 80px; /* Margen superior para dejar espacio para el header */
 }
 
 /* Fondo con posición fija */
 .background {
-    
-    background-image: url("../images/mdfo.jpg") no-repeat center center fixed; /* Estilo de fondo */
-    background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
-    position: fixed; /* Fijar el fondo en la ventana */
-    top: 0; /* Arriba de la ventana */
-    left: 0; /* Izquierda de la ventana */
-    right: 0; /* Derecha de la ventana */
-    bottom: 0; /* Abajo de la ventana */
-    z-index: -1; /* Colocar el fondo detrás de todo */
+  background-image: url("../images/maderafondo.png") no-repeat center center
+    fixed; /* Estilo de fondo */
+  background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
+  position: fixed; /* Fijar el fondo en la ventana */
+  top: 0; /* Arriba de la ventana */
+  left: 0; /* Izquierda de la ventana */
+  right: 0; /* Derecha de la ventana */
+  bottom: 0; /* Abajo de la ventana */
+  z-index: -1; /* Colocar el fondo detrás de todo */
 }
 
 /* Contenedor principal con margen inferior */
 .container {
-    position: relative; /* Posición relativa para contenido interno */
-    padding: 20px; /* Espaciado interior */
-    border-radius: 10px; /* Borde redondeado */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin-top: 140px; /* Margen superior para separar del navbar */
-    margin-bottom: 70px; /* Margen inferior para separar del footer */
-    z-index: 1; /* Colocar encima del fondo */
+  position: relative; /* Posición relativa para contenido interno */
+  padding: 20px; /* Espaciado interior */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-top: 140px; /* Margen superior para separar del navbar */
+  margin-bottom: 70px; /* Margen inferior para separar del footer */
+  z-index: 1; /* Colocar encima del fondo */
 }
 
 /* Encabezado */
 header {
-    position: fixed; /* Encabezado fijo en la parte superior */
-    top: 0; /* Arriba de la ventana */
-    left: 0; /* Izquierda de la ventana */
-    right: 0; /* Derecha de la ventana */
-    background-color: #6c757d; /* Color de fondo del encabezado */
-    color: #000000; /* Color de texto del encabezado */
-    padding: 20px; /* Espaciado interior */
-    text-align: center; /* Alineación del texto al centro */
-    z-index: 2; /* Colocar encima del fondo y el contenido */
+  position: fixed; /* Encabezado fijo en la parte superior */
+  top: 0; /* Arriba de la ventana */
+  left: 0; /* Izquierda de la ventana */
+  right: 0; /* Derecha de la ventana */
+  background-color: #6c757d; /* Color de fondo del encabezado */
+  color: #000000; /* Color de texto del encabezado */
+  padding: 20px; /* Espaciado interior */
+  text-align: center; /* Alineación del texto al centro */
+  opacity: 0.9; /* Opacidad del contenido */
+  z-index: 2; /* Colocar encima del fondo y el contenido */
 }
 
 /* Navegación */
 nav ul {
-    list-style: none; /* Eliminar marcadores de lista */
-    padding: 0; /* Relleno cero */
+  list-style: none; /* Eliminar marcadores de lista */
+  padding: 0; /* Relleno cero */
 }
 
 nav li {
-    display: inline; /* Elementos de navegación en línea */
-    margin-right: 20px; /* Margen derecho entre elementos */
+  display: inline; /* Elementos de navegación en línea */
+  margin-right: 20px; /* Margen derecho entre elementos */
 }
 
 nav a {
-    text-decoration: none; /* Sin subrayado en los enlaces */
-    color: #000000; /* Color de texto de los enlaces */
-    font-weight: bold; /* Texto en negrita */
-}
-
-/* Estilo para el botón de WhatsApp */
-#whatsapp-button {
-    background-color: #25d366; /* Color de fondo del botón */
-    color: #fff; /* Color de texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interior */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
-}
-
-#whatsapp-button:hover {
-    background-color: #128c7e; /* Cambio de color al pasar el ratón */
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  color: #000000; /* Color de texto de los enlaces */
+  font-weight: bold; /* Texto en negrita */
 }
 
 /* Pie de página */
 footer {
-    position: fixed; /* Pie de página fijo en la parte inferior */
-    bottom: 0; /* Abajo de la ventana */
-    left: 0; /* Izquierda de la ventana */
-    right: 0; /* Derecha de la ventana */
-    background-color: #333; /* Color de fondo del pie de página */
-    color: #cf0b0b; /* Color de texto del pie de página */
-    text-align: center; /* Alineación del texto al centro */
-    padding: 10px; /* Espaciado interior */
-    z-index: 2; /* Colocar encima del fondo y el contenido */
+  position: fixed; /* Pie de página fijo en la parte inferior */
+  bottom: 0; /* Abajo de la ventana */
+  left: 0; /* Izquierda de la ventana */
+  right: 0; /* Derecha de la ventana */
+  background-color: #333; /* Color de fondo del pie de página */
+  color: #cf0b0b; /* Color de texto del pie de página */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 10px; /* Espaciado interior */
+  z-index: 2; /* Colocar encima del fondo y el contenido */
 }
 
 /* Estilo para el contenido (letras de color azul claro) */
@@ -105,96 +88,174 @@ footer {
 .container p,
 .container .project h3,
 .container .product h3 {
-    color: #25a6f0; /* Color azul zafiro para los encabezados y texto del contenido */
+  color: #25a6f0; /* Color azul zafiro para los encabezados y texto del contenido */
 }
 
 /* Centrar secciones */
 .container > section {
-    text-align: center; /* Alineación del texto al centro */
-    margin: 20px auto; /* Margen automático para centrar */
-    width: 80%; /* Ancho del contenido */
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo de secciones con opacidad */
-    padding: 20px; /* Espaciado interior */
-    border-radius: 10px; /* Borde redondeado */
-    z-index: 1; /* Colocar encima del fondo */
+  text-align: center; /* Alineación del texto al centro */
+  margin: 20px auto; /* Margen automático para centrar */
+  width: 80%; /* Ancho del contenido */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo de secciones con opacidad */
+  padding: 20px; /* Espaciado interior */
+  border-radius: 10px; /* Borde redondeado */
+  z-index: 1; /* Colocar encima del fondo */
 }
 
 /* Estilo para los enlaces internos */
 a:hover {
-    color: #007bff; /* Cambio de color al pasar el ratón */
+  color: #007bff; /* Cambio de color al pasar el ratón */
 }
 
 /* Secciones "Contacto" y "Nosotros" */
 .section-margin {
-    margin-top: 60px; /* Margen superior para separar del navbar */
+  margin-top: 60px; /* Margen superior para separar del navbar */
 }
 /* Estilo para enlaces deshabilitados */
 .disabled-link {
-    pointer-events: none; /* Deshabilita eventos de puntero */
-    opacity: 0.5; /* Reduce la opacidad para indicar que está deshabilitado */
+  pointer-events: none; /* Deshabilita eventos de puntero */
+  opacity: 0.5; /* Reduce la opacidad para indicar que está deshabilitado */
 }
 
+#img-product {
+  width: 75vw;
+}
+.img-portafolio {
+  width: 95%;
+}
+.content-tarjet {
+   display: flex;
+  flex-wrap: wrap;
+}
+.content-tarjet__portafolio {
+ position: relative;
+  width: 30vw;
+  flex: 1;
+  margin: 5px;
+}
+
+/* Estilos generales para la descripción del proyecto */
+.project-description {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif, Arial;
 
 
+}
 
+.project-description p {
+    margin-bottom: 15px;
+    text-align: justify; 
+}
+
+/* Estilos para el botón */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25a6f0;
+    color: #070d10ef;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: right; 
+
+}
+
+.btn:hover {
+    background-color: #070d10ef;
+    color: #1e87d2;
+
+}
+
+/* Estilo para el botón de WhatsApp */
+#whatsapp-button {
+  background-color: #25d366; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interior */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  flex: 1; /* Hace que los botones se ajusten al espacio disponible */
+  margin: 5px; /* Agrega un margen para separar los botones */
+}
+
+#whatsapp-button:hover {
+  background-color: #128c7e; /* Cambio de color al pasar el ratón */
+}
 
 #facebook-button {
-    background-color: #2556d3; /* Color de fondo del botón */
-    color: #fff; /* Color de texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interior */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  background-color: #2556d3; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interior */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  flex: 1; /* Hace que los botones se ajusten al espacio disponible */
+  margin: 5px; /* Agrega un margen para separar los botones */
 }
 
 #facebook-button:hover {
-    background-color: #12678c; /* Cambio de color al pasar el ratón */
+  background-color: #12678c; /* Cambio de color al pasar el ratón */
 }
 
 #youtube-button {
-    background-color: #9a0000; /* Color de fondo del botón */
-    color: #fff; /* Color de texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interior */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  background-color: #9a0000; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interior */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  flex: 1; /* Hace que los botones se ajusten al espacio disponible */
+  margin: 5px; /* Agrega un margen para separar los botones */
 }
 
 #youtube-button:hover {
-    background-color: #e01313; /* Cambio de color al pasar el ratón */
+  background-color: #e01313; /* Cambio de color al pasar el ratón */
 }
 
 #correo-button {
-    background-color: #ffffff; /* Color de fondo del botón */
-    color: #000000; /* Color de texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interior */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  background-color: #ffffff; /* Color de fondo del botón */
+  color: #000000; /* Color de texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interior */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  flex: 1; /* Hace que los botones se ajusten al espacio disponible */
+  margin: 5px; /* Agrega un margen para separar los botones */
 }
 
 #correo-button:hover {
-    background-color: #545454; /* Cambio de color al pasar el ratón */
+  background-color: #545454; /* Cambio de color al pasar el ratón */
 }
 
-
 #instagram-button {
-    background-color: #6500a9; /* Color de fondo del botón */
-    color: #fff; /* Color de texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interior */
-    font-weight: bold; /* Texto en negrita */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
-    transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  background-color: #6500a9; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interior */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  transition: background-color 0.3s; /* Transición al cambiar el color de fondo */
+  flex: 1; /* Hace que los botones se ajusten al espacio disponible */
+  margin: 5px; /* Agrega un margen para separar los botones */
 }
 
 #instagram-button:hover {
-    background-color: #7d00ea; /* Cambio de color al pasar el ratón */
+  background-color: #7d00ea; /* Cambio de color al pasar el ratón */
+}
+
+#list-contact {
+  display: flex;
+  flex-wrap: wrap;
 }
