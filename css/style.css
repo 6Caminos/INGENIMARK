@@ -15,19 +15,6 @@ body {
   margin-top: 80px; /* Margen superior para dejar espacio para el header */
 }
 
-/* Fondo con posición fija */
-.background {
-  background-image: url("../images/maderafondo.png") no-repeat center center
-    fixed; /* Estilo de fondo */
-  background-size: cover; /* Ajustar el tamaño de la imagen de fondo */
-  position: fixed; /* Fijar el fondo en la ventana */
-  top: 0; /* Arriba de la ventana */
-  left: 0; /* Izquierda de la ventana */
-  right: 0; /* Derecha de la ventana */
-  bottom: 0; /* Abajo de la ventana */
-  z-index: -1; /* Colocar el fondo detrás de todo */
-}
-
 /* Contenedor principal con margen inferior */
 .container {
   position: relative; /* Posición relativa para contenido interno */
@@ -124,49 +111,130 @@ a:hover {
   width: 95%;
 }
 .content-tarjet {
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
 }
+
+/* Estilos base para .content-tarjet__portafolio */
 .content-tarjet__portafolio {
- position: relative;
+  position: relative;
   width: 30vw;
   flex: 1;
   margin: 5px;
+  font-size: 1em; /* Tamaño base del texto */
+}
+/* Consulta de medios para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 140px;
+    margin-bottom: 40px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .container > section {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .content-tarjet__portafolio {
+    width: 90vw;
+    margin: 5px auto;
+  }
+  .container h2,
+  .container p,
+  .container .project h3,
+  .container .product h3 {
+    font-size: 1.2em;
+  }
 }
 
-/* Estilos generales para la descripción del proyecto */
-.project-description {
+@media screen and (max-width: 1024px) {
+  /* Estilos para tablets */
+  .container {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  header {
     padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif, Arial;
+  }
 
+  .container > section {
+    width: 85%;
+  }
 
+  .content-tarjet__portafolio {
+    width: 45vw;
+    margin: 10px auto;
+  }
+  .container h2,
+  .container p,
+  .container .project h3,
+  .container .product h3 {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para dispositivos móviles */
+  .container {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .container > section {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .content-tarjet__portafolio {
+    width: 90vw;
+    margin: 5px auto;
+  }
+  .container h2,
+  .container p,
+  .container .project h3,
+  .container .product h3 {
+    font-size: 1.8em;
+  }
+}
+/* Estilos generales para la descripción del proyecto incluyendo tamaño de texto */
+.project-description {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif, Arial;
+  font-size: 1em; /* Tamaño base del texto en la descripción */
 }
 
 .project-description p {
-    margin-bottom: 15px;
-    text-align: justify; 
+  margin-bottom: 15px;
+  text-align: justify;
 }
 
 /* Estilos para el botón */
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #25a6f0;
-    color: #070d10ef;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    text-align: right; 
-
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25a6f0;
+  color: #070d10ef;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-align: right;
 }
 
 .btn:hover {
-    background-color: #070d10ef;
-    color: #1e87d2;
-
+  background-color: #070d10ef;
+  color: #1e87d2;
 }
 
 /* Estilo para el botón de WhatsApp */
