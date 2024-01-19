@@ -154,7 +154,7 @@ a:hover {
 @media screen and (max-width: 1024px) {
   /* Estilos para tablets */
   .container {
-    margin-top: 100px;
+    margin-top: 140px;
     margin-bottom: 60px;
   }
 
@@ -181,7 +181,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   /* Estilos para dispositivos móviles */
   .container {
-    margin-top: 80px;
+    margin-top: 150px;
     margin-bottom: 40px;
   }
 
